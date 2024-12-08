@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Rubik, Fira_Mono } from "next/font/google";
+import { Rubik, Fira_Code } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
 import "./globals.css";
+import Header from "@/components/Header/Header";
 
 const rubik = Rubik({
   subsets: ["arabic", "latin"],
@@ -10,9 +11,9 @@ const rubik = Rubik({
   variable: "--font-rubik",
 });
 
-const firaMono = Fira_Mono({
+const firaMono = Fira_Code({
   subsets: ["latin"],
-  weight: "400",
+  weight: ["300", "400", "500", "600", "700"],
   variable: "--font-fira-mono",
 });
 
@@ -33,6 +34,7 @@ export default async function RootLayout({
     <html lang={locale}>
       <body className={`${rubik.variable} ${firaMono.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
+          <Header />
           {children}
         </NextIntlClientProvider>
       </body>

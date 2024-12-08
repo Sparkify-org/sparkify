@@ -6,8 +6,14 @@ import { setUserLocale } from "@/services/locale";
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import clsx from "clsx";
 import { useLocale } from "next-intl";
+import { AnimatePresence, motion } from "motion/react";
+import { cn } from "@/utils/twcn";
 
-export const LangSwitcher: React.FC = () => {
+interface Props {
+  className?: React.HTMLAttributes<HTMLElement>["className"];
+}
+
+export const LangSwitcher: React.FC<Props> = ({ className }) => {
   const currLocale = useLocale();
   const [isPending, startTransition] = React.useTransition();
 
@@ -20,28 +26,54 @@ export const LangSwitcher: React.FC = () => {
   };
 
   return (
-    <Menu>
-      <MenuButton
-        disabled={isPending}
-        className={clsx(
-          "uppercase p-2",
-          isPending && "disabled:cursor-not-allowed",
-        )}
-      >
-        {currLocale}
-      </MenuButton>
-      <MenuItems anchor="bottom">
-        {locales.map((item) => (
-          <MenuItem key={item}>
-            <button
-              className="block w-full uppercase"
-              onClick={() => changeLocale(item)}
-            >
-              {item}
-            </button>
-          </MenuItem>
-        ))}
-      </MenuItems>
-    </Menu>
+    <div className={className}>
+      <Menu>
+        <MenuButton
+          disabled={isPending}
+          className={clsx(
+            "uppercase p-2 bg-white border-2 border-black rounded-full",
+            isPending && "disabled:cursor-not-allowed",
+          )}
+        >
+          {
+            // TODO: add an icon to appear before the currently used language
+            currLocale
+          }
+        </MenuButton>
+        <AnimatePresence>
+          <MenuItems
+            anchor="bottom"
+            as={motion.div}
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
+            className={cn(
+              "bg-white border-2 border-black rounded-xl px-3 py-2 mt-2"
+            )}
+          >
+            {locales.map((item) => (
+              <MenuItem key={item}>
+                <motion.button
+                  initial={{
+                    backgroundColor: "#ffffff",
+                  }}
+                  whileHover={{
+                    backgroundColor: "#e1e1e1",
+                    transition: {
+                      type: "ease",
+                      duration: 0.1
+                    }
+                  }}
+                  className="block w-full uppercase px-2 py-1 my-1 rounded-md"
+                  onClick={() => changeLocale(item)}
+                >
+                  {item}
+                </motion.button>
+              </MenuItem>
+            ))}
+          </MenuItems>
+        </AnimatePresence>
+      </Menu>
+    </div>
   );
 };
