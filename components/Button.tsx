@@ -1,0 +1,20 @@
+import Link from "next/link";
+
+interface ButtonProps {
+  href: string;
+  text: string;
+  additionalClasses?: string; // Optional for size or style changes
+}
+
+const Button: React.FC<ButtonProps> = ({ href, text, additionalClasses }) => {
+  return (
+    <Link
+      href={href}
+      className={` my-4 lg:text-lg relative flex items-center justify-center border bg-black text-white text-xs h-12 p-3 after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:bg-white after:border after:border-black after:-z-10 transition-all duration-300 hover:bg-white hover:text-black hover:after:bg-black active:after:translate-y-1 ${additionalClasses}`}
+    >
+      {text}
+    </Link>
+  );
+};
+
+export default Button;
