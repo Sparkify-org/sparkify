@@ -39,12 +39,12 @@ function NavLink({
         });
       }}
       className={cn(
-        "relative rounded-full z-10 text-white mix-blend-difference",
+        "relative z-10 text-white mix-blend-difference",
       )}
     >
       <Link
         href={path}
-        className="block py-3 px-5 rounded-full"
+        className="block py-2 px-5 rounded-full"
       >
         {children}
       </Link>
@@ -53,7 +53,7 @@ function NavLink({
         <motion.span
           layoutId="pill-tab"
           transition={{ type: "spring", duration: 0.5 }}
-          className="absolute z-0 inset-0 border-2 border-white rounded-full"
+          className="absolute z-0 inset-0 border-2 border-white"
         ></motion.span>
       )
       }
@@ -67,7 +67,7 @@ export function Cursor({ position }: { position: CursorProps }) {
       animate={{
         ...position,
       }}
-      className="absolute bg-black rounded-full z-0 h-9"
+      className="absolute bg-black z-0 h-7"
     />
   );
 }
