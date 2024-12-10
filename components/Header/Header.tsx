@@ -1,25 +1,18 @@
-import React from "react";
-import Navbar from "../Navbar/Navbar";
-import { WandSparkles } from "lucide-react";
-import { LangSwitcher } from "../LangSwitcher/LangSwitcher";
+"use client";
 
-function Header() {
-  return (
-    <header className="flex justify-between z-50 mt-8 fixed w-full">
-      <div className="w-1/4 flex items-center">
-        <div className="ms-20 rounded-full border-2 border-black flex justify-between items-center gap-4 py-3 px-4">
-          <WandSparkles color="#000000" />
-          <span>Sparkify</span>
-        </div>
-      </div>
-      <div className="w-1/2">
-        <Navbar className="me-auto" />
-      </div>
-      <div className="w-1/4 flex items-center">
-        <LangSwitcher className="ms-auto w-fit me-20" />
-      </div>
-    </header>
-  );
-}
+import { useWindowWidth } from "@/hooks/useWindowWidth";
+import LargeHeader from "./LargeHeader";
+import SmallHeader from "./SmallHeader";
+
+const Header = () => {
+  const width = useWindowWidth();
+
+  // to prevent rendering the small header 
+  // on large screens for the first couple of seconds 
+  // of rendering
+  if (width == 0) return null;
+
+  return width > 768 ? <LargeHeader /> : <SmallHeader />;
+};
 
 export default Header;

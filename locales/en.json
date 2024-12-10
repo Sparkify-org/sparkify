@@ -4,5 +4,8 @@
     "about": "About us",
     "contact": "Contact",
     "projects": "Our Projects"
+  },
+  "Hero": {
+    "title": "Sparkify"
   }
 }

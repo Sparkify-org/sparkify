@@ -4,5 +4,8 @@
     "about": "hakkında",
     "contact": "bize Ulaşın",
     "projects": "Our Projects"
+  },
+  "Hero": {
+    "title": "Sparkify"
   }
 }
