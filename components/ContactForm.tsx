@@ -43,9 +43,9 @@ function ContactForm() {
 
         {/* Social Links */}
         <div className="grid grid-cols-3">
-          <Button href="#" text="Whatsapp" additionalClasses="mx-1" />
-          <Button href="#" text="Linkedin" additionalClasses="mx-1" />
-          <Button href="#" text="Instagram" additionalClasses="mx-1" />
+          <Button href="#" text="Whatsapp" className ="mx-1" />
+          <Button href="#" text="Linkedin" className ="mx-1" />
+          <Button href="#" text="Instagram"className ="mx-1" />
         </div>
       </form>
     </div>
