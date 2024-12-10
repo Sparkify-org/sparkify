@@ -4,5 +4,14 @@
     "about": "من نحن",
     "contact": "تواصل معنا",
     "projects": "أعمالنا"
+  },
+  "ContactForm":{
+
+    "ContactUs":"تواصل معنا",
+    "EnterName":"ادخل الاسم",
+    "EnterEmail":"ادخل البريد الالكتروني",
+    "HowCanWeHelp":"كيف يمكننا مساعدتكم",
+    "Send":"ارسال",
+    "OrChatWithUs":"او تواصل معنا من خلال"
   }
 }

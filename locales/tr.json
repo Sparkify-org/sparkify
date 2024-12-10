@@ -4,5 +4,13 @@
     "about": "hakkında",
     "contact": "bize Ulaşın",
     "projects": "Our Projects"
+  },
+  "ContactForm": {
+    "ContactUs": "Bize Ulaşın",
+    "EnterName": "Adınızı Girin",
+    "EnterEmail": "E-postanızı Girin",
+    "HowCanWeHelp": "Size Nasıl Yardımcı Olabiliriz",
+    "Send": "Gönder",
+    "OrChatWithUs": "Ya da Bizimle Sohbet Edin"
   }
 }
