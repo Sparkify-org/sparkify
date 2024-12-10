@@ -21,6 +21,9 @@ const config: Config = {
         'box-white-md': "10px 10px 0 0 #ffffff",
         'box-black-sm': "5px 5px 0 0 #000000",
         'box-white-sm': "5px 5px 0 0 #ffffff",
+      },
+      backgroundImage: {
+        sparkify: "url('/sparkify-bg.svg')"
       }
     },
   },

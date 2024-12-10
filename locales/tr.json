@@ -12,5 +12,8 @@
     "HowCanWeHelp": "Size Nasıl Yardımcı Olabiliriz",
     "Send": "Gönder",
     "OrChatWithUs": "Ya da Bizimle Sohbet Edin"
+  }.
+  "Hero": {
+    "title": "Sparkify"
   }
 }

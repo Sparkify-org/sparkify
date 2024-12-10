@@ -12,5 +12,8 @@
     "HowCanWeHelp": "How Can We Help",
     "Send": "Send",
     "OrChatWithUs": "Or Chat With Us"
+  },
+  "Hero": {
+    "title": "Sparkify"
   }
 }
