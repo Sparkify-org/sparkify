@@ -5,6 +5,7 @@ import { getLocale, getMessages } from "next-intl/server";
 import "./globals.css";
 import Header from "@/components/Header/Header";
 import { AppContainer } from "@/components/AppContainer";
+import { ThemeProvider } from "@/components/ThemeProvider";
 
 const rubik = Rubik({
   subsets: ["arabic", "latin"],
@@ -33,12 +34,17 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body
-        className={`${rubik.variable} ${firaMono.variable} antialiased`}
-      >
+      <body className={`${rubik.variable} ${firaMono.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
-          <Header />
-          <AppContainer>{children}</AppContainer>
+          <ThemeProvider
+            attribute={"class"}
+            defaultTheme="dark"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <Header />
+            <AppContainer>{children}</AppContainer>
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

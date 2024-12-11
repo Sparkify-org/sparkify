@@ -29,7 +29,7 @@ const Navbar: React.FC<Props> = ({ className }) => {
     <div className={className}>
       <nav>
         <ul
-          className="relative mx-auto w-fit flex justify-center items-center gap-4 font-sans p-2  bg-white border-2 border-black shadow-box-black-sm"
+          className="relative mx-auto w-fit flex justify-center items-center gap-4 font-sans p-2  bg-background border-2 border-foreground shadow-box-black-sm dark:shadow-box-white-sm"
           onMouseLeave={() => {
             setCursorPos((prev) => ({ ...prev, opacity: 0 }));
           }}
