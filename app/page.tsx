@@ -1,10 +1,9 @@
-"use client";
-
-import Hero from "@/sections/Hero";
+import { Hero } from "@/sections/Hero";
 
 export default function Home() {
+
   return (
-    <main>
+    <main className="font-sans">
       <Hero />
     </main>
   );

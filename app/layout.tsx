@@ -32,10 +32,8 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
-      <body
-        className={`${rubik.variable} ${firaMono.variable} antialiased`}
-      >
+    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
+      <body className={`${rubik.variable} ${firaMono.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
           <Header />
           <AppContainer>{children}</AppContainer>
