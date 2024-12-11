@@ -5,6 +5,14 @@
     "contact": "bize Ulaşın",
     "projects": "Our Projects"
   },
+  "ContactForm": {
+    "ContactUs": "Bize Ulaşın",
+    "EnterName": "Adınızı Girin",
+    "EnterEmail": "E-postanızı Girin",
+    "HowCanWeHelp": "Size Nasıl Yardımcı Olabiliriz",
+    "Send": "Gönder",
+    "OrChatWithUs": "Ya da Bizimle Sohbet Edin"
+  },
   "Hero": {
     "title": "Sparkify",
     "line1": "Our duty is to give your business the spark to shine"

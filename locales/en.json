@@ -5,6 +5,14 @@
     "contact": "Contact",
     "projects": "Our Projects"
   },
+  "ContactForm": {
+    "ContactUs": "Contact Us",
+    "EnterName": "Enter Your Name",
+    "EnterEmail": "Enter Your Email",
+    "HowCanWeHelp": "How Can We Help",
+    "Send": "Send",
+    "OrChatWithUs": "Or Chat With Us"
+  },
   "Hero": {
     "title": "Sparkify",
     "line1": "Our duty is to give your business the spark to shine"
