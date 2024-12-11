@@ -70,7 +70,7 @@ export const ThemeSwitcher: React.FC<Props> = ({ className }) => {
                             duration: 0.1,
                           },
                         }}
-                        className="w-full uppercase px-2 py-1 my-1 flex gap-3 text-right"
+                        className="w-full uppercase px-2 py-1 my-1 flex rtl:flex-row-reverse gap-3 text-right"
                         onClick={() => changeTheme(item)}
                       >
                         {item}

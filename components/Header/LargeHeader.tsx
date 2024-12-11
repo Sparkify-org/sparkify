@@ -26,7 +26,7 @@ function LargeHeader() {
   }, [yPosition]);
 
   return (
-    <header className="flex justify-between mt-4 fixed w-full">
+    <header className="flex justify-between mt-4 fixed w-full z-50">
       <motion.div
         animate={
           inContainer
