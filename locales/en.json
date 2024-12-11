@@ -14,6 +14,7 @@
     "OrChatWithUs": "Or Chat With Us"
   },
   "Hero": {
-    "title": "Sparkify"
+    "title": "Sparkify",
+    "line1": "Our duty is to give your business the spark to shine"
   }
 }
