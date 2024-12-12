@@ -8,10 +8,12 @@ import { motion } from "motion/react";
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import AnimatedLogoLight from "@/components/AnimatedLogoLight";
+import { useWindowWidth } from "@/hooks/useWindowWidth";
 
 const Hero = () => {
   const { theme } = useTheme();
   const [isMounted, setIsMounted] = useState(false);
+  const width = useWindowWidth();
   const locale = useLocale();
   const t = useTranslations("Hero");
 
@@ -20,9 +22,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex justify-center items-center gap-20">
+    <section className="min-h-screen flex lg:flex-row mx-8 flex-col justify-center items-center lg:gap-20 sm:gap-10 gap-5">
       {isMounted && (theme === "light" ? (
-        <AnimatedLogo width={300} />
+        <AnimatedLogo width={width > 500 ? 300 : 200} />
       ) : (
         <AnimatedLogoLight width={300} />
       ))}
@@ -35,7 +37,7 @@ const Hero = () => {
             opacity: 1,
           }}
           className={cn(
-            "font-semibold  text-start text-6xl",
+            "font-semibold  lg:text-start text-center sm:text-6xl text-4xl",
             locale === "ar" ? "font-sans" : "font-mono",
           )}
         >
