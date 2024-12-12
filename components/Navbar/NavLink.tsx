@@ -67,7 +67,7 @@ export function Cursor({ position }: { position: CursorProps }) {
       animate={{
         ...position,
       }}
-      className="absolute bg-black z-0 h-7"
+      className="absolute bg-foreground z-0 h-7"
     />
   );
 }

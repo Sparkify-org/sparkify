@@ -19,7 +19,7 @@ export const MobileNavLink: React.FC<MobileNavLinkProps> = ({
       <Link 
         className={cn(
           "w-full block my-2 p-2 text-lg",
-          isActive && "bg-black text-white"
+          isActive && "bg-foreground text-background"
         )}
         href={path}>{children}</Link>
     </MenuItem>
