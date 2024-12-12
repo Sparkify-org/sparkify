@@ -48,6 +48,7 @@ export const LangSwitcher: React.FC<Props> = ({ className }) => {
             <AnimatePresence>
               {open && (
                 <MenuItems
+                  modal={false}
                   static
                   anchor="bottom end"
                   as={motion.div}

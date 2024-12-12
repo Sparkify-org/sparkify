@@ -46,6 +46,7 @@ export const ThemeSwitcher: React.FC<Props> = ({ className }) => {
               {open && (
                 <MenuItems
                   static
+                  modal={false}
                   anchor={currWidth > 768 ? "bottom end" : "bottom start"}
                   as={motion.div}
                   initial={{ opacity: 0, scale: 0.95 }}
