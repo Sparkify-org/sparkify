@@ -15,7 +15,7 @@ function OurServices() {
   const t = useTranslations("OurServices");
 
   return (
-    <div className="border  h-full w-full flex flex-col items-center justify-center text-center ">
+    <div className="border  h-full w-full flex flex-col items-center justify-center text-center font-sans  ">
       <div className="m-2  p-4 ">
         <Label  title={t("Label")}  />
       </div>
