@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Label from "../Label";
 import Button from "../Button";
@@ -8,17 +10,23 @@ import {
   ChevronsLeftRightEllipsis,
   Palette,
 } from "lucide-react";
-
 import { useTranslations } from "next-intl";
+import { cn } from "@/utils/twcn"; // Import the cn utility
 
 function OurServices() {
   const t = useTranslations("OurServices");
 
   return (
-    <div className="border  h-full w-full flex flex-col items-center justify-center text-center font-sans  ">
-      <div className="m-2  p-4 ">
-        <Label  title={t("Label")}  />
-      </div>
+    <div
+      className={cn(
+        "border relative z-0  h-full w-full flex flex-col items-center justify-center text-center font-sans",
+        "bg-[var(--background)] text-[var(--foreground)]"
+      )}
+    >
+      
+        <Label title={t("Label")}  />
+
+
       <OurServicesLink
         title={t("Cards.WebDev.title")}
         icon={
@@ -42,7 +50,7 @@ function OurServices() {
         text={t("Cards.DigitalMarketing.description")}
       />
 
-      <Button href="#" text="Contact Us For More Information"/>
+      <Button href="#" text={t("ContactLabel")}/>
     </div>
   );
 }

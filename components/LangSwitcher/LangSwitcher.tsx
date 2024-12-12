@@ -63,7 +63,7 @@ export const LangSwitcher: React.FC<Props> = ({ className }) => {
                     <MenuItem key={item}>
                       <motion.button
                         initial={{
-                          backgroundColor: theme === "light" ? "#ffffff" : "#000000",
+                          backgroundColor: theme === "light" ? "#ffffff" : "#1f2937",
                         }}
                         whileHover={{
                           backgroundColor: theme === "light" ?  "#e1e1e1" : "#313131",

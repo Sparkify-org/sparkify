@@ -35,10 +35,10 @@ const LargeHeader = () => {
       >
         <Link
           href={"/"}
-          className="border-2 border-foreground flex justify-between items-center gap-4 py-2 px-4 shadow-box-black-sm hover:translate-y-[5px] hover:translate-x-[5px] hover:shadow-none transition-all bg-white dark:bg-black dark:shadow-box-white-sm dark:hover:shadow-none"
+          className="border-2 border-foreground flex justify-between items-center gap-4 py-2 px-4 shadow-box-black-sm hover:translate-y-[5px] hover:translate-x-[5px] hover:shadow-none transition-all bg-background dark:shadow-box-white-sm dark:hover:shadow-none"
         >
           {theme === "light" ? <Logo width={32} /> : <LogoLight width={32} />}
-          <span className="lg:block hidden">Sparkify</span>
+          <span className="lg:block hidden text-foreground">Sparkify</span>
         </Link>
       </motion.div>
       <motion.div
