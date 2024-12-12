@@ -15,9 +15,9 @@ function OurServices() {
   const t = useTranslations("OurServices");
 
   return (
-    <div className="border  h-full w-full flex flex-col items-center justify-center text-center font-sans  ">
-      <div className="m-2  p-4 ">
-        <Label  title={t("Label")}  />
+    <div className="border h-full w-full flex flex-col items-center justify-center text-center font-sans bg-white text-black dark:bg-black dark:text-white">
+      <div className="m-2 p-4">
+        <Label title={t("Label")} />
       </div>
       <OurServicesLink
         title={t("Cards.WebDev.title")}
@@ -42,7 +42,7 @@ function OurServices() {
         text={t("Cards.DigitalMarketing.description")}
       />
 
-      <Button href="#" text="Contact Us For More Information"/>
+      <Button href="#" text="Contact Us For More Information" />
     </div>
   );
 }
