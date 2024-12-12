@@ -15,5 +15,27 @@
   },
   "Hero": {
     "title": "Sparkify"
+  },
+  "OurServices": {
+    "Label": "Our Services",
+    "Cards": {
+      "WebDev": {
+        "title": "Web Development",
+        "description": "We build fully customized, user-friendly, and functional websites tailored to your needs. Every project is designed and developed to meet specific business objectives and requirements."
+      },
+      "GraphicDesign": {
+        "title": "Graphic Design",
+        "description": "We provide creative, original, and professional designs for websites, logos, and print materials. Each design is tailored to meet the unique needs of your brand."
+      },
+      "VideoShooting": {
+        "title": "Video Shooting",
+        "description": "We offer high-quality, professional video shooting services for your business and products. Videos are designed to effectively convey your brand identity and message to your audience."
+      },
+      "DigitalMarketing": {
+        "title": "Digital Marketing",
+        "description": "We enhance your digital presence with targeted strategies across social media, digital advertising, and content marketing, ensuring your brand reaches and engages with your target audience."
+      }
+    },
+    "ContactLabel": "Contact us for more information"
   }
 }
