@@ -20,9 +20,9 @@ const config: Config = {
         mono: ["var(--font-fira-mono)", "monospace"],
       },
       boxShadow: {
-        'box-black-md': "10px 10px 0 0 #000000",
+        'box-black-md': "10px 10px 0 0 #1f2937",
         'box-white-md': "10px 10px 0 0 #ffffff",
-        'box-black-sm': "5px 5px 0 0 #000000",
+        'box-black-sm': "5px 5px 0 0 #1f2937",
         'box-white-sm': "5px 5px 0 0 #ffffff",
       },
       backgroundImage: {

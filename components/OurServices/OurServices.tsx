@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Label from "../Label";
 import Button from "../Button";
@@ -8,14 +10,19 @@ import {
   ChevronsLeftRightEllipsis,
   Palette,
 } from "lucide-react";
-
 import { useTranslations } from "next-intl";
+import { cn } from "@/utils/twcn"; // Import the cn utility
 
 function OurServices() {
   const t = useTranslations("OurServices");
 
   return (
-    <div className="border h-full w-full flex flex-col items-center justify-center text-center font-sans bg-white text-black dark:bg-black dark:text-white">
+    <div
+      className={cn(
+        "border h-full w-full flex flex-col items-center justify-center text-center font-sans",
+        "bg-[var(--background)] text-[var(--foreground)]"
+      )}
+    >
       <div className="m-2 p-4">
         <Label title={t("Label")} />
       </div>
