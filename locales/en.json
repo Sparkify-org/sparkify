@@ -23,5 +23,39 @@
     "image_alt1": "Analysing data and income",
     "paragraph2": "Our goal is simple: to make your life easier and your business better. Whether you need help online or with tech, we work hard to give you the best results.",
     "paragraph3": "Let’s work together to make your business shine!"
+  },
+  "Footer": {
+    "socialMedia": "Social Media",
+    "contactInformation": "Contact Information",
+    "ourServices": "Our Services",
+    "webDevelopment": "Web Development",
+    "videoShooting": "Video Shooting",
+    "digitalMarketing": "Digital Marketing",
+    "contactNumber": "+90-5437710174",
+    "email": "info@sparkify.com",
+    "chat": "Start a Chat",
+    "allRightsReserved": "All Rights Reserved"
+  },
+  "OurServices": {
+    "Label": "Our Services",
+    "Cards": {
+      "WebDev": {
+        "title": "Web Development",
+        "description": "We build fully customized, user-friendly, and functional websites tailored to your needs. Every project is designed and developed to meet specific business objectives and requirements."
+      },
+      "GraphicDesign": {
+        "title": "Graphic Design",
+        "description": "We provide creative, original, and professional designs for websites, logos, and print materials. Each design is tailored to meet the unique needs of your brand."
+      },
+      "VideoShooting": {
+        "title": "Video Shooting",
+        "description": "We offer high-quality, professional video shooting services for your business and products. Videos are designed to effectively convey your brand identity and message to your audience."
+      },
+      "DigitalMarketing": {
+        "title": "Digital Marketing",
+        "description": "We enhance your digital presence with targeted strategies across social media, digital advertising, and content marketing, ensuring your brand reaches and engages with your target audience."
+      }
+    },
+    "ContactLabel": "Contact us for more information"
   }
 }

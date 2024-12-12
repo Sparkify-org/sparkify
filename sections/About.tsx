@@ -35,7 +35,7 @@ const About = () => {
       <div className="grid md:grid-cols-2 grid-cols-1 2xl:mx-52 lg:mx-24 md:mx-8 sm:mx-24 mx-12 2xl:gap-40 xl:gap-20 gap-10 md:mb-24 mb-12">
         <SparkifyCard className="p-10 h-[250px] md:mt-20 mt-10">
           <p className="text-3xl lg:leading-10 leading-8">{t("paragraph3")}</p>
-          <div className="opacity-25 ms-auto w-fit mt-3">
+          <div className="absolute opacity-15 ms-auto w-fit end-4 bottom-4">
             {theme === "light" ? (
               <Logo width={100} />
             ) : (
