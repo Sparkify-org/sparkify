@@ -16,5 +16,26 @@
   "Hero": {
     "title": "Sparkify",
     "line1": "Our duty is to give your business the spark to shine"
-  }
+  },
+  "OurServices": {
+    "Label": "Hizmetlerimiz",
+    "Cards": {
+      "WebDev": {
+        "title": "Web Geliştirme",
+        "description": "İhtiyaçlarınıza göre tamamen özelleştirilmiş, kullanıcı dostu ve fonksiyonel web siteleri oluşturuyoruz. Her proje, müşteri hedeflerine uygun şekilde tasarlanır ve geliştirilir."
+      },
+      "GraphicDesign": {
+        "title": "Grafik Tasarım",
+        "description": "Web siteleri, logolar ve baskı materyalleri için yaratıcı, özgün ve profesyonel tasarımlar sunuyoruz. Her tasarım, markanıza özel ihtiyaçlar doğrultusunda oluşturulur."
+      },
+      "VideoShooting": {
+        "title": "Video Çekimi",
+        "description": "İşletmeniz ve ürünleriniz için kaliteli ve profesyonel video çekim hizmetleri sunuyoruz. Videolar, markanızın kimliğini ve mesajını etkili bir şekilde iletmek için tasarlanır."
+      },
+      "DigitalMarketing": {
+        "title": "Dijital Pazarlama",
+        "description": "Dijital pazarlama stratejileriyle markanızın dijital varlığını güçlendiriyor, hedef kitlenize sosyal medya, dijital reklamlar ve içerik stratejileriyle ulaşmanızı sağlıyoruz."
+      }
+    },
+    "ContactLabel": "Daha fazla bilgi için bizimle iletişime geçin"
 }
