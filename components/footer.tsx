@@ -9,7 +9,7 @@ const Footer = () => {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="footer-container bg-gray-100 dark:bg-black text-gray-800 dark:text-gray-200 py-8 px-4 font-sans">
+    <footer className="footer-container bg-gray-100 dark:bg-black text-gray-800 dark:text-gray-200 py-8 px-8 font-sans">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
         {/* Social Media Section */}
         <div className="social-media space-y-4 flex flex-col items-center md:items-start">
@@ -26,16 +26,16 @@ const Footer = () => {
 
         {/* Contact Information Section */}
         <div className="contact-info space-y-4 flex flex-col items-center md:items-start">
-          <h3 className="text-lg font-semibold dark:text-white">{t("contactInfo")}</h3>
+          <h3 className="text-lg font-semibold dark:text-white">{t("contactInformation")}</h3>
           <ul className="space-y-2">
             <li className="flex items-center gap-2">
-              <Phone className="dark:text-gray-200" /> <span>+90-5437710174</span>
+              <Phone className="dark:text-gray-200"  /> <span>+90-5437710174</span>
             </li>
             <li className="flex items-center gap-2">
               <Mail className="dark:text-gray-200" /> <span>info@sparkify.com</span>
             </li>
             <li className="flex items-center gap-2">
-              <MessageSquare className="dark:text-gray-200" /> <span>{t("startChat")}</span>
+              <MessageSquare className="dark:text-gray-200" /> <span>{t("chat")}</span>
             </li>
           </ul>
         </div>
@@ -64,7 +64,7 @@ const Footer = () => {
           <Image src={SparkifyBlack} alt="Logo" className="w-full h-full object-cover" />
         </div>
         {/* Footer Text */}
-        <p className="text-sm dark:text-gray-400">{t("footerText")}</p>
+        <p className="text-sm dark:text-gray-400">{t("allRightsReserved")}</p>
       </div>
     </footer>
   );
