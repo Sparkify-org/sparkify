@@ -15,7 +15,14 @@
   },
   "Hero": {
     "title": "Sparkify",
-    "line1": "Şirketinizin parlaması için ihtiyaç duyduğu kıvılcımı sağlamak bizim görevimiz."
+    "line1": "Our duty is to give your business the spark to shine"
+  },
+  "About": {
+    "title": "Sparkify Hakkında",
+    "paragraph1": "Biz Sparkify’iz! İşletmelerin büyümesine yaratıcı dijital pazarlama ve akıllı BT çözümleriyle yardımcı oluyoruz. Harika web siteleri tasarlıyoruz, etkileyici videolar çekiyoruz ve ürünleriniz için profesyonel fotoğraflar çekiyoruz.",
+    "image_alt1": "Analysing data and income",
+    "paragraph2": "Amacımız basit: Hayatınızı kolaylaştırmak ve işinizi daha iyi hale getirmek. İster çevrimiçi ister teknik destek arıyor olun, size en iyi sonuçları sunmak için çok çalışıyoruz.",
+    "paragraph3": "Haydi, işinizi birlikte parlatmaya başlayalım!"
   },
   "Footer": {
     "socialMedia": "Sosyal Medya",

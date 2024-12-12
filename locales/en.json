@@ -17,6 +17,13 @@
     "title": "Sparkify",
     "line1": "Our duty is to give your business the spark to shine"
   },
+  "About": {
+    "title": "About Sparkify",
+    "paragraph1": "We’re Sparkify! We help businesses grow with creative digital marketing and smart IT solutions. We build cool websites, create awesome videos, and take great product photos to make your brand stand out.",
+    "image_alt1": "Analysing data and income",
+    "paragraph2": "Our goal is simple: to make your life easier and your business better. Whether you need help online or with tech, we work hard to give you the best results.",
+    "paragraph3": "Let’s work together to make your business shine!"
+  },
   "Footer": {
     "socialMedia": "Social Media",
     "contactInformation": "Contact Information",
