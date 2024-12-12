@@ -18,7 +18,7 @@ function ContactForm() {
         {/* Input Fields */}
         <form
           className={cn(
-            "mt-10 border border-foreground p-4 shadow-box-black-sm rounded-md"
+            "mt-10 border border-foreground p-4 shadow-box-black-sm dark:shadow-box-white-md"
           )}
         >
           <ul className="text-xs lg:text-lg space-y-4">
