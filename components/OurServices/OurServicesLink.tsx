@@ -20,10 +20,12 @@ const OurServicesLink: React.FC<OurServicesLinkProps> = ({
   return (
     <div
       className={cn(
-        "border grid lg:grid-flow-col grid-flow-row m-4 w-full max-w-2xl shadow-box-black-sm lg:shadow-box-white-md lg:min-h-48  ",
-        theme === "dark" ? "bg-background text-foreground " : "bg-foreground text-background "
+        "border grid lg:grid-flow-col grid-flow-row m-4 w-full max-w-2xl relative lg:min-h-48  after:content-[''] after:absolute after:top-2.5 after:left-2.5 after:w-full after:h-full dark:after:bg-white after:border-2 after:border-foreground after:-z-10 ",
+        theme === "dark"
+          ? "bg-background text-foreground "
+          : "bg-foreground text-background "
       )}
-     >
+    >
       <div
         className={cn(
           "lg:grid-flow-row grid p-2",

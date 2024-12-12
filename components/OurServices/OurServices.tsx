@@ -50,7 +50,7 @@ function OurServices() {
         text={t("Cards.DigitalMarketing.description")}
       />
 
-      <Button href="#" text="Contact Us For More Information" />
+      <Button href="#" text={t("ContactLabel")}/>
     </div>
   );
 }
