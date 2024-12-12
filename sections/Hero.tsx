@@ -9,7 +9,7 @@ import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import AnimatedLogoLight from "@/components/AnimatedLogoLight";
 
-export const Hero = () => {
+const Hero = () => {
   const { theme } = useTheme();
   const [isMounted, setIsMounted] = useState(false);
   const locale = useLocale();
@@ -20,7 +20,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-[90vh] flex justify-center items-center gap-20">
+    <section className="min-h-screen flex justify-center items-center gap-20">
       {isMounted && (theme === "light" ? (
         <AnimatedLogo width={300} />
       ) : (
@@ -62,3 +62,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+export default Hero;
