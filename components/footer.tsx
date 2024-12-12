@@ -9,8 +9,8 @@ const Footer = () => {
   const t = useTranslations("Footer");
 
   return (
-    <footer className="footer-container bg-gray-100 dark:bg-black text-gray-800 dark:text-gray-200 py-8 px-8 font-sans">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+    <footer className="footer-container bg-gray-100 dark:bg-black text-gray-800 dark:text-gray-200 py-8 px-8 font-sans" dir="ltr">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left md:place-items-center">
         {/* Social Media Section */}
         <div className="social-media space-y-4 flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold dark:text-white">{t("socialMedia")}</h3>
@@ -28,9 +28,10 @@ const Footer = () => {
         <div className="contact-info space-y-4 flex flex-col items-center md:items-start">
           <h3 className="text-lg font-semibold dark:text-white">{t("contactInformation")}</h3>
           <ul className="space-y-2">
-            <li className="flex items-center gap-2">
-              <Phone className="dark:text-gray-200"  /> <span>+90-5437710174</span>
-            </li>
+          <li className="flex items-center gap-2">
+  <Phone className="dark:text-gray-200" /> <span dir="ltr">+90-5437710174</span>
+</li>
+
             <li className="flex items-center gap-2">
               <Mail className="dark:text-gray-200" /> <span>info@sparkify.com</span>
             </li>
