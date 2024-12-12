@@ -3,22 +3,17 @@ import FormLink from "./FormLink";
 import Button from "./Button";
 import { useTranslations } from "next-intl";
 import { cn } from "@/utils/twcn";
+import Label from "./Label";
 
 function ContactForm() {
   const t = useTranslations("ContactForm");
 
   return (
     <div className={cn("p-4 mt-20 bg-background text-foreground")}>
-      <div className="max-w-2xl mx-auto">
+      <div className="max-w-2xl mx-auto relative z-0">
         {/* Label */}
-        <h2
-          className={cn(
-            "lg:text-xl text-md relative border p-3 bg-foreground text-background text-center mx-auto w-fit",
-            "after:content-[''] after:absolute after:top-1 after:left-1 after:w-full after:h-full after:bg-background after:border after:border-foreground after:-z-10"
-          )}
-        >
-          {t("ContactUs")}
-        </h2>
+
+        <Label title={t("ContactUs")} />
 
         {/* Input Fields */}
         <form

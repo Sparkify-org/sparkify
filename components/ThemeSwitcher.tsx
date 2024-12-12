@@ -60,7 +60,7 @@ export const ThemeSwitcher: React.FC<Props> = ({ className }) => {
                       <motion.button
                         initial={{
                           backgroundColor:
-                            theme === "light" ? "#ffffff" : "#000000",
+                            theme === "light" ? "#ffffff" : "#1f2937",
                         }}
                         whileHover={{
                           backgroundColor:

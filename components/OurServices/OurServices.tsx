@@ -19,13 +19,14 @@ function OurServices() {
   return (
     <div
       className={cn(
-        "border h-full w-full flex flex-col items-center justify-center text-center font-sans",
+        "border relative z-0  h-full w-full flex flex-col items-center justify-center text-center font-sans",
         "bg-[var(--background)] text-[var(--foreground)]"
       )}
     >
-      <div className="m-2 p-4">
-        <Label title={t("Label")} />
-      </div>
+      
+        <Label title={t("Label")}  />
+
+
       <OurServicesLink
         title={t("Cards.WebDev.title")}
         icon={
