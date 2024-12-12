@@ -15,7 +15,19 @@
   },
   "Hero": {
     "title": "سباركفاي",
-    "line1": "مهمتنا هي اعطاء شكرتكم الشرارة اللازمة حتى تزدهر"
+    "line1": "مهمتنا هي اعطاء شركتكم الشرارة اللازمة حتى تزدهر"
+  },
+  "Footer": {
+    "socialMedia": "وسائل التواصل الاجتماعي",
+    "contactInformation": "معلومات الاتصال",
+    "ourServices": "خدماتنا",
+    "webDevelopment": "تطوير الويب",
+    "videoShooting": "تصوير الفيديو",
+    "digitalMarketing": "التسويق الرقمي",
+    "contactNumber": "+90-5437710174",
+    "email": "info@sparkify.com",
+    "chat": "ابدأ محادثة",
+    "allRightsReserved": "جميع الحقوق محفوظة"
   },
   "OurServices": {
     "Label": "خدماتنا",
