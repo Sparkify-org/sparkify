@@ -16,5 +16,17 @@
   "Hero": {
     "title": "Sparkify",
     "line1": "Our duty is to give your business the spark to shine"
+  },
+  "Footer": {
+    "socialMedia": "Sosyal Medya",
+    "contactInformation": "İletişim Bilgileri",
+    "ourServices": "Hizmetlerimiz",
+    "webDevelopment": "Web Geliştirme",
+    "videoShooting": "Video Çekimi",
+    "digitalMarketing": "Dijital Pazarlama",
+    "contactNumber": "+90-5437710174",
+    "email": "info@sparkify.com",
+    "chat": "Sohbete Başlayın",
+    "allRightsReserved": "Tüm Hakları Saklıdır"
   }
 }

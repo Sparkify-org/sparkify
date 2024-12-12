@@ -6,15 +6,27 @@
     "projects": "أعمالنا"
   },
   "ContactForm": {
-    "ContactUs":"تواصل معنا",
-    "EnterName":"ادخل الاسم",
-    "EnterEmail":"ادخل البريد الالكتروني",
-    "HowCanWeHelp":"كيف يمكننا مساعدتكم",
-    "Send":"ارسال",
-    "OrChatWithUs":"او تواصل معنا من خلال"
+    "ContactUs": "تواصل معنا",
+    "EnterName": "ادخل الاسم",
+    "EnterEmail": "ادخل البريد الالكتروني",
+    "HowCanWeHelp": "كيف يمكننا مساعدتكم",
+    "Send": "ارسال",
+    "OrChatWithUs": "او تواصل معنا من خلال"
   },
   "Hero": {
     "title": "سباركفاي",
-    "line1": "مهمتنا هي اعطاء شكرتكم الشرارة اللازمة حتى تزدهر"
+    "line1": "مهمتنا هي اعطاء شركتكم الشرارة اللازمة حتى تزدهر"
+  },
+  "Footer": {
+    "socialMedia": "وسائل التواصل الاجتماعي",
+    "contactInformation": "معلومات الاتصال",
+    "ourServices": "خدماتنا",
+    "webDevelopment": "تطوير الويب",
+    "videoShooting": "تصوير الفيديو",
+    "digitalMarketing": "التسويق الرقمي",
+    "contactNumber": "+90-5437710174",
+    "email": "info@sparkify.com",
+    "chat": "ابدأ محادثة",
+    "allRightsReserved": "جميع الحقوق محفوظة"
   }
 }

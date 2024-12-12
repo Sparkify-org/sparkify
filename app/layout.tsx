@@ -6,6 +6,7 @@ import "./globals.css";
 import Header from "@/components/Header/Header";
 import { AppContainer } from "@/components/AppContainer";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Footer from "@/components/footer";
 
 const rubik = Rubik({
   subsets: ["arabic", "latin"],
@@ -46,6 +47,8 @@ export default async function RootLayout({
             <AppContainer>{children}</AppContainer>
           </ThemeProvider>
         </NextIntlClientProvider>
+        <Footer/>
+
       </body>
     </html>
   );
